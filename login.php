@@ -7,6 +7,7 @@
 
     <!-- Include Bootstrap CSS from CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css" />
 </head>
 <body class="container mt-5">
 
@@ -25,6 +26,9 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary">Login</button>
+                <p class="para-2">
+      Not have an account? <a href="http://localhost/itsupport/signup.php">Sign Up Here</a>
+    </p>
             </form>
 
             <?php
