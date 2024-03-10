@@ -102,7 +102,7 @@
 	<br><br><br><br>
 	<div class="container">
 		<div class="col-6">
-			<img src="cc.png"  class="com-p">
+			<img src="tech.jpg"  class="com-p">
 		</div>
 		<div class="col-6">
 			<h2 class="heading-4">Let's Register & Get<br> 24/7<br> Instant Response</h2>
@@ -142,7 +142,7 @@
 	<br><br><br><br>
 	<div class="container">
 		<div class="col-6">
-			<img src="future.png" class="com-p">
+			<img src="africa.webp" class="com-p">
 		</div>
 		<div class="col-6">
 			<h2 class="heading-4">Get Empowered<br> and lead<br> The AI age</h2>

@@ -20,14 +20,18 @@ if (!isset($_SESSION["username"])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-<body class="container mt-5" style="background-color: #87CEEB; color: #000080;">
+<body class="container mt-5" style="background-image:url(Blue2.png); color: #000080;">
 
-    <div class="card" style="border-color: #000080; background-color:darkturquoise">
+<div style="display: flex; justify-content: center; align-items: center; height: 80vh; margin-top: -50px;">
+    <div class="card" style="border-color: #000080; background-color:rgb(8, 170, 234);">
         <div class="card-body">
             <h2 class="card-title">Welcome, <?php echo $_SESSION["username"]; ?>!</h2>
             <p><a href="logout.php" class="btn btn-primary" style="background-color: #000080;">Logout</a></p>
         </div>
     </div>
+</div>
+
+
 
 </body>
 
