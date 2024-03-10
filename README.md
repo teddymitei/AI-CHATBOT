@@ -1,5 +1,5 @@
 ## DIY IT SUPPORT SYSTEM
-
+The DIY (Do-It-Yourself) IT Support System is a chatbot based system that incorporates AI models with the primary goal of reducing downtime by empowering employees with the capability of solving simple technical issues thereby increasing productivity in the workplace. 
 
 ## Problem Statement
 
