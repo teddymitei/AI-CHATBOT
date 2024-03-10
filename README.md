@@ -1,3 +1,6 @@
+## DIY IT SUPPORT SYSTEM
+
+
 ## PROBLEM STATEMENT
 
 In a tech intensive business world, time is of utmost importance. The systems whether customer management or otherwise need to be running smoothly to prevent any monetary repercussions. When there is a technical problem whether software, hardware or network, downtime usually occurs. Where time is a very crucial factor, losses may be incurred. The downtime usually varies with the response time and efficiency of the IT support team. Most of the time, the solution to these problems is straight forward ranging from network connection to slow PC remedies. If the employees are privy to these simple steps by getting a system that can be in the form of an assistant, a lot of time can be saved hence increasing productivity and seamless workflow.
