@@ -3,35 +3,30 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="mediaqueries.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="script.js"></script>
 </head>
 <body>
 
 <section class="banner">
 	<header class="sticky">
-		<div class="container">
-			<div class="col-3">
-				<div class="logo"><a href="http://localhost/itsupport/landingpage.php#"><img src="logo3.png" alt=""> </a></div>
-			</div>
-			<div class="col-6">
-				<ul class="nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#contact_section">Contact</a></li>
-					<li><a href="login.php">Login</a></li>
-                    
-				</ul>
-			</div>
-			<div class="col-3">
-                <a href="signup.php">
-				<button class="btn">Register</button>
-                </a>
-			</div>
-			<div class="clearfix"></div>
-		</div>
+	<nav>
+	<a href="#">
+    <img src="http://localhost/itsupport/static/photos/logo3.png" alt="Logo">
+</a>
 
-		<div class="clearfix"></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#contact_section">Contact</a></li>
+            <li><a href="http://localhost/itsupport/templates/login.php">Login</a></li>
+			<li><a href="http://localhost/itsupport/templates/signup.php">Register</a></li>
+        </ul>
+        
+        <div id="menu-icon">&#9776;</div>
+    </nav>
 	</header>
 		
 		<div class="clascol">
@@ -44,12 +39,12 @@
                     </a>
 				 	<div class="clearfix"></div>
 				 	<br><br><br><br>
-                     <img src="ai.jpg" class="icon">
+                     <img src="http://localhost/itsupport/static/photos/ai.jpg" class="icon">
 				</div>
 			</div>
 			<div class="col-6">
 				<br>
-				<img src="help.webp" class="banner-img">
+				<img src="http://localhost/itsupport/static/photos/help.webp" class="banner-img">
 			</div>
 
 		</div>
@@ -102,7 +97,7 @@
 	<br><br><br><br>
 	<div class="container">
 		<div class="col-6">
-			<img src="tech.jpg"  class="com-p">
+			<img src="http://localhost/itsupport/static/photos/tech.jpg"  class="com-p">
 		</div>
 		<div class="col-6">
 			<h2 class="heading-4">Let's Register & Get<br> 24/7<br> Instant Response</h2>
@@ -131,7 +126,7 @@
 		</div>
 		<div class="col-6" style="text-align: center;">
 			<br>
-			<img src="EE.jpg" >
+			<img src="http://localhost/itsupport/static/photos/EE.jpg" >
 		</div>
 		<div class="clearfix"></div>
 		<br><br><br><br>
@@ -142,7 +137,7 @@
 	<br><br><br><br>
 	<div class="container">
 		<div class="col-6">
-			<img src="africa.webp" class="com-p">
+			<img src="http://localhost/itsupport/static/photos/africa.webp" class="com-p">
 		</div>
 		<div class="col-6">
 			<h2 class="heading-4">Get Empowered<br> and lead<br> The AI age</h2>
@@ -214,7 +209,7 @@
 
 		<div class="clearfix"></div>
 		<hr>
-		<p class="copy">Copyright 2024 design by Teddy Mitei</p>
+		<p class="copy">______Teddy Mitei_____</p>
 		<br><br><br><br>
 	</div>
 </section>

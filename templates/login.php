@@ -1,3 +1,48 @@
+<?php
+session_start();
+
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "bsod_db";
+
+$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Function to verify user credentials
+function authenticateUser($conn, $username, $password) {
+    $stmt = $conn->prepare("SELECT password FROM users WHERE username = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $stmt->bind_result($hashed_password);
+    $stmt->fetch();
+    $stmt->close();
+
+    if (password_verify($password, $hashed_password)) {
+        return true; // Authentication successful
+    }
+
+    return false; // Authentication failed
+}
+
+// Process form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username_input = $_POST["username"];
+    $password_input = $_POST["password"];
+
+    if (authenticateUser($conn, $username_input, $password_input)) {
+        header("Location: http://127.0.0.1:5000/");
+        exit();
+    } else {
+        $login_error = "Authentication failed. Please check your username and password.";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,11 +69,13 @@
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" class="form-control" required>
                 </div>
-
+                <a href="http://127.0.0.1:5000/">
                 <button type="submit" class="btn btn-primary">Login</button>
+</a>
+
                 <p class="para-2">
-      Not have an account? <a href="http://localhost/itsupport/signup.php">Sign Up Here</a>
-    </p>
+                    Not have an account? <a href="signup.php">Sign Up Here</a>
+                </p>
             </form>
 
             <?php
@@ -42,3 +89,8 @@
 
 </body>
 </html>
+
+<?php
+// Close the database connection
+$conn->close();
+?>

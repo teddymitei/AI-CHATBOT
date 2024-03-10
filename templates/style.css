@@ -11,7 +11,7 @@
 .col-6{width: 50%; float: left;}
 .container{width: 1200px; margin: 0 auto; max-width: 100%;}
 .clearfix{clear: both;}
-.banner{background:url(blue.jpg), var(--darkgreen);
+.banner{background:url(http://localhost/itsupport/static/photos/blue.jpg), var(--darkgreen);
     background-repeat: no-repeat; background-size: 3000px;}
 .logo{color: var(--white); font-weight: 500; padding:25px;}
 .nav{margin: 0 auto; width: 400px;}
@@ -117,56 +117,71 @@ img.com-p {
 
 
 }
-@media (max-width: 800px) {
-  .clascol {
-    display: block;
+
+nav {
+
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav img {
+  height: 80px; /* Set your logo height */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+#register-btn {
+  background-color: #4CAF50; /* Green color for register button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hamburger Menu Styles */
+#menu-icon {
+  display: none; /* Initially hide for larger screens */
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide navigation links for small screens */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 255, 0.705);
+      padding: 30px;
+      z-index: 1;
+  }
+
+  .nav-links.show {
+      display: flex; /* Show navigation links when menu is active */
+  }
+
+  .nav-links a {
+      padding: 10px 20px;
+      text-align: center;
+  }
+
+  #menu-icon {
+      display: block; /* Show menu icon for small screens */
   }
 }
-bodY {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.center {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-}
-.wave {
-  width: 5px;
-  height: 100px;
-  background: linear-gradient(45deg, cyan, #fff);
-  margin: 10px;
-  animation: wave 1s linear infinite;
-  border-radius: 20px;
-}
-.wave:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.wave:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.wave:nth-child(4) {
-  animation-delay: 0.3s;
-}
-.wave:nth-child(5) {
-  animation-delay: 0.4s;
-}
-.wave:nth-child(6) {
-  animation-delay: 0.5s;
-}
-.wave:nth-child(7) {
-  animation-delay: 0.6s;
-}
-.wave:nth-child(8) {
-  animation-delay: 0.7s;
-}
-.wave:nth-child(9) {
-  animation-delay: 0.8s;
-}
-.wave:nth-child(10) {
-  animation-delay: 0.9s;
-}
+
 

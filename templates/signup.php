@@ -89,7 +89,7 @@ $conn->close();
 
             <button type="submit" class="btn btn-primary">Signup</button>
             <p class="para-2">
-      Already have an account? <a href="http://localhost/itsupport/login.php">Login here</a>
+      Already have an account? <a href="http://localhost/itsupport/templates/login.php">Login here</a>
     </p>
         </form>
 
